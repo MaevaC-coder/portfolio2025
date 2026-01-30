@@ -1,0 +1,143 @@
+/* remise à zéro */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* body */
+body {
+  display: flex; /*flexbox*/
+  flex-direction: column; /*mettre les éléments en colonne*/
+  align-items: center;
+  padding: 10px; /* Un peu de padding pour plus de style*/
+  row-gap: 20px; /* espaces entre les différents éléments pour mieux les différencier 
+                  et rajouter du style */
+  
+
+  font-family: Arial, sans-serif; /*style du texte*/
+  background: #f9f9f9; /*couleur du fond*/
+  color: #333; /*couleur du texte, modifiée pour être plus douce*/
+}
+
+
+/* header avec la navigation */
+
+header {
+  background: #005f73; /* couleur de fond du header pour la navigation*/
+  padding: 10px ;  /* aggrandir le header */
+  width: 98%;
+}
+
+.nav-menu {
+  list-style: none; /* enlever les puces pour les éléments de navigation
+                    dans la barre en haut*/
+  display: flex;
+  justify-content: center; /* centrer le menu */
+  column-gap: 30px;  /* espace entre les différentes parties du site */
+}
+
+.nav-menu li a {
+  color: white; /* nav en blanc*/
+  text-decoration: none; /* enlever le fait que ce soit souligné */
+  font-weight: bold; /* nav en gras */
+  border-radius: 5px; /* arrondir le tour d'un élément de nav (pour le bouton de page 
+                      active)*/
+  padding: 5px 10px;  /*aggrandir les boutons du menu */
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+  background: #0a9396;  /* fond du bouton de navigation actuel et de celui
+                          sur lequel on passe la souris */
+}
+
+.container {
+  width: 35%;
+
+}
+
+/*contenu principal*/
+
+.login-section {
+
+  display: flex; /* nav en gras */
+  flex-direction: column; /* éléments mis en colonne */
+  background: white; /* fond blanc pour chaque formulaire */
+  padding: 30px; /* espace entre la boite et le texte */
+  border-radius: 10px;  /* boite arrondie */
+  box-shadow: 0 5px 8px rgba(0,0,0,0.1);  /* ombre pour plus de style */
+  row-gap: 20px; /* espace entre les lignes*/
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.login-form div.base {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.login-form div input {
+  max-width: 50%;
+  padding: 8px;
+  border: 1px solid #ccc;  /* bordure pour les champs à remplir + style (couleur) */
+  border-radius: 5px;
+}
+
+.login-genre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+.mdp_confirm {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.boutonsdouble {
+  display: flex;
+  justify-content: space-between;
+}
+
+.boutonsdouble button{
+  width: 45%;
+}
+
+.abonnement{
+  max-width: 50%;
+}
+
+.login-form button {
+
+  padding: 10px; /* + de style, aggrandir la taille du bouton */
+  background: #005f73; /* couleur du bouton */
+  color: white; /*couleur du text*/
+  border: none; /* on enlève la bordure mise pour tous les inputs */
+  border-radius: 5px; /* on arrondi les angles */
+  
+  cursor: pointer; /* quand on passe sur l'élément le bout de la souris devient un 
+                    pointeur comme pour cliquer sur des boutons */
+}
+
+.login-form button:hover {
+  background: #0a9396; /* quand on passe sur la souris dessus, le bouton devient
+                          bleu clair*/
+}
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 20px 10px;
+  background: #333;
+  color: white;
+  font-size: 14px;
+}
