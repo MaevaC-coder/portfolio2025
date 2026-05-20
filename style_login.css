@@ -1,9 +1,5 @@
-/* remise à zéro */
 
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 /* body */
 body {
@@ -58,7 +54,7 @@ header {
 
 /*contenu principal*/
 
-.login-section {
+#contenuprincipal div {
 
   display: flex; /* nav en gras */
   flex-direction: column; /* éléments mis en colonne */
@@ -67,68 +63,6 @@ header {
   border-radius: 10px;  /* boite arrondie */
   box-shadow: 0 5px 8px rgba(0,0,0,0.1);  /* ombre pour plus de style */
   row-gap: 20px; /* espace entre les lignes*/
-}
-
-.login-form {
-  display: flex;
-  flex-direction: column;
-  row-gap: 40px;
-}
-
-.login-form div.base {
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-}
-
-.login-form div input {
-  max-width: 50%;
-  padding: 8px;
-  border: 1px solid #ccc;  /* bordure pour les champs à remplir + style (couleur) */
-  border-radius: 5px;
-}
-
-.login-genre {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-
-.mdp_confirm {
-  display: flex;
-  flex-direction: column;
-  row-gap: 10px;
-}
-
-.boutonsdouble {
-  display: flex;
-  justify-content: space-between;
-}
-
-.boutonsdouble button{
-  width: 45%;
-}
-
-.abonnement{
-  max-width: 50%;
-}
-
-.login-form button {
-
-  padding: 10px; /* + de style, aggrandir la taille du bouton */
-  background: #005f73; /* couleur du bouton */
-  color: white; /*couleur du text*/
-  border: none; /* on enlève la bordure mise pour tous les inputs */
-  border-radius: 5px; /* on arrondi les angles */
-  
-  cursor: pointer; /* quand on passe sur l'élément le bout de la souris devient un 
-                    pointeur comme pour cliquer sur des boutons */
-}
-
-.login-form button:hover {
-  background: #0a9396; /* quand on passe sur la souris dessus, le bouton devient
-                          bleu clair*/
 }
 
 /* footer */
